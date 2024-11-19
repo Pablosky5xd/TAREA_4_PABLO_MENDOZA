@@ -4,6 +4,6 @@ window.onload = function () {
     const userName = prompt("dime, ¿Cómo te llamas?");
 
     if (userName) {
-        document.getElementById("mensaje-bienvenida").innerText = `Hola, ${userName}, gracias por visitarnos.`;
+        document.getElementById("mensaje-bienvenida").innerText = `Como estas, ${userName}?, gracias por visitarnos!.`;
     }
 };
