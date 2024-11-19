@@ -1,0 +1,93 @@
+body {
+    background-color: #eceff1; /* Fondo gris claro para un diseño profesional */
+    color: #2c3e50; /* Texto en un tono elegante y legible */
+    font-family: 'Arial', sans-serif;
+}
+
+.table-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px; /* Ancho adecuado para más contenido */
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+th, td {
+    padding: 12px 18px; /* Espaciado generoso para mejor legibilidad */
+    text-align: center;
+    border: 1px solid #ddd; /* Bordes más suaves */
+}
+
+th {
+    background-color: #607d8b; /* Azul grisáceo elegante */
+    color: #ffffff; /* Texto blanco para contraste */
+    font-size: 1.2em;
+    animation: glow 3s infinite; /* Sutil animación */
+}
+
+td {
+    font-size: 1em;
+    color: #2c3e50; /* Texto en tono profesional */
+}
+
+@keyframes glow {
+    0%, 100% {
+        background-color: #d4552e; /* Azul oscuro */
+    }
+    50% {
+        background-color: #78909c; /* Azul más claro */
+    }
+}
+
+button {
+    padding: 10px 20px; /* Tamaño cómodo para botones */
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    background-color: #9c7519; /* Azul vibrante */
+    color: black;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    background-color: #0277bd; /* Azul más oscuro */
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center; /* Centrar botones */
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+}
+
+header, footer {
+    background-color: cadetblue; /* Tonalidad azul vibrante */
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}

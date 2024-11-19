@@ -1,0 +1,79 @@
+body {
+    background-color: #f5f7fa; /* Fondo más claro y elegante */
+    color: #003f63; /* Texto con mayor contraste */
+    font-family: 'Arial', sans-serif;
+}
+
+header, footer {
+    background-color: rosybrown; /* Azul más vibrante */
+    color: black; /* Texto blanco para contraste */
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #003f63; /* Tono consistente con el texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sutil sombra para destacar */
+    margin-bottom: 10px;
+}
+
+.contenedor {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.contenedor-boton {
+    margin-top: 20px;
+    text-align: center; /* Centrar botones */
+}
+
+.boton-animado {
+    background-color: goldenrod; /* Azul vibrante */
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Bordes más redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-animado:hover {
+    background-color: green; /* Azul más oscuro en hover */
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.description {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    max-width: 700px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #e0e0e0; /* Bordes más suaves */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más marcada */
+}
+
+.description h2 {
+    color: #003f63; /* Tono consistente */
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.description ul {
+    list-style: disc; /* Estilo de lista más convencional */
+    padding-left: 20px; /* Sangría */
+    margin: 15px 0;
+}
+
+.description li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.5; /* Mejor espaciado entre líneas */
+}

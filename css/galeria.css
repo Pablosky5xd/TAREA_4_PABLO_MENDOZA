@@ -1,0 +1,137 @@
+body { 
+    background-color: #eef2f3; /* Fondo moderno y suave */
+    color: #444; /* Texto con un tono neutro */
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #4a90e2; /* Tonalidad azul vibrante */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
+    color: #333; /* Títulos en un tono oscuro */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Pequeña sombra para destacar */
+}
+
+img {
+    object-fit: cover;
+    width: 50px;
+}
+
+.boton-animado {
+    background-color: #007aff; /* Azul vibrante para botones */
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-animado:hover {
+    background-color: #005bb5; /* Azul más oscuro en hover */
+    transform: scale(1.1); /* Aumenta un poco su tamaño */
+}
+
+.contenedor {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Mayor separación entre imágenes */
+}
+
+.imagen-galeria {
+    width: 200px;
+    height: auto;
+    border-radius: 12px; /* Bordes más redondeados */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Nuevos efectos para las imágenes */
+.imagen-galeria:hover {
+    transform: rotate(-5deg) scale(1.05); /* Ligero giro y escalado */
+    filter: brightness(1.2) contrast(1.1); /* Más brillo y contraste */
+}
+
+/* Animaciones únicas para cada imagen */
+#img1:hover {
+    animation: zoom-blur 1s infinite;
+}
+
+#img2:hover {
+    animation: hue-rotate 1.5s infinite;
+}
+
+#img3:hover {
+    animation: swing 1s infinite;
+}
+
+#img4:hover {
+    animation: bounce 0.8s infinite;
+}
+
+#img5:hover {
+    animation: wave 1s infinite;
+}
+
+/* Nuevas animaciones */
+@keyframes zoom-blur {
+    0%, 100% {
+        transform: scale(1) blur(0px);
+    }
+    50% {
+        transform: scale(1.2) blur(2px);
+    }
+}
+
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+}
