@@ -1,79 +1,86 @@
 body {
-    background-color: #f5f7fa; /* Fondo más claro y elegante */
-    color: #003f63; /* Texto con mayor contraste */
-    font-family: 'Arial', sans-serif;
+    background-color: #eef1f5; /* Fondo más suave */
+    color: #002d4a; /* Texto con mejor contraste */
+    font-family: 'Verdana', sans-serif; /* Tipografía más moderna */
 }
 
 header, footer {
-    background-color: rosybrown; /* Azul más vibrante */
-    color: black; /* Texto blanco para contraste */
-    padding: 15px 0;
+    background-color: #2d6a4f; /* Verde elegante */
+    color: white; /* Texto blanco para contraste */
+    padding: 20px 0;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Tamaño más destacado */
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #003f63; /* Tono consistente con el texto */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sutil sombra para destacar */
-    margin-bottom: 10px;
+    font-size: 3em; /* Tamaño mayor para el título */
+    color: #002d4a; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    margin-bottom: 20px;
 }
 
 .contenedor {
-    padding: 20px;
-    background-color: #ffffff; /* Fondo blanco para contraste */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    margin: 20px auto;
-    max-width: 800px;
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco puro */
+    border-radius: 20px; /* Bordes más suaves */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center; /* Texto justificado */
 }
 
 .contenedor-boton {
-    margin-top: 20px;
-    text-align: center; /* Centrar botones */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Botones en vertical */
+    align-items: center; /* Centrados */
+    gap: 15px; /* Espaciado entre botones */
 }
 
 .boton-animado {
-    background-color: goldenrod; /* Azul vibrante */
-    color: black;
+    background-color: #6a994e; /* Verde vibrante */
+    color: white;
     font-weight: bold;
-    padding: 10px 20px;
+    font-size: 1.2em; /* Tamaño más grande */
+    padding: 12px 25px;
     border: none;
-    border-radius: 20px; /* Bordes más redondeados */
+    border-radius: 25px; /* Bordes redondeados */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px; /* Ancho uniforme */
+    text-align: center;
 }
 
 .boton-animado:hover {
-    background-color: green; /* Azul más oscuro en hover */
-    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    background-color: #40916c; /* Verde más oscuro */
+    transform: translateY(-3px); /* Efecto de elevación */
 }
 
 .description {
-    margin: 20px auto;
-    padding: 20px;
-    text-align: left;
-    max-width: 700px;
-    background-color: #ffffff; /* Fondo blanco */
-    border: 1px solid #e0e0e0; /* Bordes más suaves */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más marcada */
+    margin: 25px auto;
+    padding: 30px;
+    text-align: justify; /* Texto más uniforme */
+    max-width: 800px;
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+    border: 2px solid #d9d9d9; /* Bordes más claros */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más marcada */
 }
 
 .description h2 {
-    color: #003f63; /* Tono consistente */
-    margin-bottom: 10px;
-    font-size: 1.8em;
+    color: #002d4a; 
+    margin-bottom: 15px;
+    font-size: 2em; /* Título más grande */
 }
 
 .description ul {
-    list-style: disc; /* Estilo de lista más convencional */
-    padding-left: 20px; /* Sangría */
-    margin: 15px 0;
+    list-style: circle; /* Estilo más moderno */
+    padding-left: 25px; /* Mayor sangría */
+    margin: 20px 0;
 }
 
 .description li {
-    margin: 10px 0;
-    font-size: 1.1em;
-    line-height: 1.5; /* Mejor espaciado entre líneas */
+    margin: 12px 0;
+    font-size: 1.2em; /* Tamaño más legible */
+    line-height: 1.8; /* Mejor espaciado */
 }

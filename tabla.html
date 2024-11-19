@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla Interactiva</title>
-    <link rel="stylesheet" href="css/global.css">
+    <meta name="description" content="Explora operaciones matemáticas interactivas mediante una tabla dinámica.">
+    <meta name="author" content="Pablo Mendoza">
+    <title>Tabla Interactiva de Operaciones</title>
     <link rel="stylesheet" href="css/tabla.css">
 </head>
+
 <body>
-<header>
-    <h1>Tabla Interactiva</h1>
-</header>
-<div class="contenedor table-container">
-    <table>
-        <tr>
-            <th class="animated-header">OPERACIÓN</th>
-            <th class="animated-header">DESCRIPCIÓN</th>
-            <th class="animated-header">BOTONES</th>
-        </tr>
-        <tr>
-            <td>MULTIPLICACIÓN</td>
-            <td>Multiplica 2 números ingresados</td>
-            <td>
-                <button onclick="multiplicar()">Calcular</button>
-            </td>
-        </tr>
-        <tr>
-            <td>EXPONENTE 2</td>
-            <td>Eleva al cuadrado un número ingresado</td>
-            <td>
-                <button onclick="elevar()">Calcular</button>
-            </td>
-        </tr>
-        <tr>
-            <td>RESTA</td>
-            <td>Resta 2 números ingresados</td>
-            <td>
-                <button onclick="restar()">Calcular</button>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-    <div class="button-container">
-        <button onclick="location.href='index.html'">Volver a Inicio</button>
-        <button onclick="location.href='gallery.html'">Ir a Galería</button>
-    </div>
-</div>
-<footer>
-    <p>&copy; 2024 Derechos Reservados - Pablo Mendoza</p>
-</footer>
-<script src="js/tabla.js"></script>
+    <!-- Encabezado -->
+    <header>
+        <h1>Tabla Interactiva</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="contenedor table-container">
+        <!-- Descripción de la tabla -->
+        <section>
+            <p>
+                Bienvenido a nuestra tabla interactiva. Aquí puedes realizar operaciones matemáticas básicas como 
+                multiplicación, exponenciación y resta. ¡Explora y descubre cómo funcionan!
+            </p>
+        </section>
+
+        <!-- Tabla de operaciones -->
+        <table>
+            <thead>
+                <tr>
+                    <th class="animated-header">Operación</th>
+                    <th class="animated-header">Descripción</th>
+                    <th class="animated-header">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Multiplicación</td>
+                    <td>Multiplica dos números ingresados.</td>
+                    <td>
+                        <button onclick="multiplicar()">Calcular</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Exponente 2</td>
+                    <td>Eleva al cuadrado un número ingresado.</td>
+                    <td>
+                        <button onclick="elevar()">Calcular</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Resta</td>
+                    <td>Resta dos números ingresados.</td>
+                    <td>
+                        <button onclick="restar()">Calcular</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Botones de navegación -->
+        <section class="button-container">
+            <button onclick="location.href='index.html'" aria-label="Volver a la página de inicio">Volver a Inicio</button>
+            <button onclick="location.href='galeria.html'" aria-label="Ir a la galería de imágenes">Ir a Galería</button>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Derechos Reservados - <strong>Pablo Mendoza</strong>.</p>
+    </footer>
+
+    <script src="js/tabla.js"></script>
 </body>
+
 </html>
